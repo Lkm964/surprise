@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@400;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -7,63 +5,49 @@
 }
 
 body {
-    background-color: #ffe8d6; /* Beige doux comme la vidéo */
+    background-color: #ffe8d6; /* Beige crème */
     font-family: 'Nunito', sans-serif;
-    overflow: hidden; /* Empêche de scroller */
+    overflow: hidden;
     width: 100vw;
     height: 100vh;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Le conteneur du texte */
 .container {
     position: absolute;
-    top: 5%; /* Placé en haut */
-    left: 50%;
-    transform: translateX(-50%);
+    top: 5%;
     z-index: 10;
     text-align: center;
-    width: 90%;
-    max-width: 600px;
-    background: rgba(255, 255, 255, 0.4); /* Très léger fond blanc pour lire */
-    padding: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 15px 30px;
     border-radius: 20px;
-    backdrop-filter: blur(3px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    backdrop-filter: blur(5px);
 }
 
-h1 {
+.title {
     font-family: 'Dancing Script', cursive;
     font-size: 2.5rem;
     color: #333;
-    margin-bottom: 5px;
-}
-
-.heart-icon {
-    color: #ff4d6d;
-    animation: beat 1s infinite alternate;
 }
 
 .timer {
-    font-size: 1.1rem;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 700;
     color: #d63384;
-    margin-top: 10px;
-    background: #fff;
-    padding: 8px 15px;
-    border-radius: 50px;
-    display: inline-block;
+    margin: 10px 0;
 }
 
-/* Animation du coeur qui bat */
-@keyframes beat {
-    to { transform: scale(1.2); }
+.subtitle {
+    color: #666;
+    font-size: 0.9rem;
 }
 
 canvas {
-    display: block;
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
-    z-index: 1;
+    width: 100%;
+    height: 100%;
 }
