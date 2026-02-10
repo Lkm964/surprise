@@ -120,7 +120,7 @@ function animate() {
 }
 
 // Effet écriture du message
-const messageText = "Une copine pas comme les autres. une joyeuse saint-Valentin.Merci d'être là pour moi Elo. ;
+const messageText = "Une copine pas comme les autres. une joyeuse saint-Valentin.Merci d'être là pour moi Elo." ;
 let charIdx = 0;
 function typeMessage() {
     if (charIdx < messageText.length) {
